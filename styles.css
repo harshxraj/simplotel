@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9e2e2;
+  color: #333;
+}
+
+nav {
+  background-color: #ff6363;
+  padding: 6px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+li {
+  margin: 0 15px;
+}
+ul img {
+  width: 44px;
+}
+
+li a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+li a:hover {
+  background-color: #ff4e4e;
+  color: #fff;
+}
+
+.hero__section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__section div:nth-child(1) {
+  padding: 4rem;
+}
+
+.hero__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product__section img {
+  width: 100%;
+  object-fit: cover;
+}
+.hero__heading {
+  font-size: 4rem;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.hero__description {
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+}
+.hero__button {
+  padding: 1rem 5rem;
+  background-color: #ff6363;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.hero__button:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #ff4c4c;
+}
+
+.hero__button:focus {
+  outline: 2px solid #333;
+  outline-offset: 1px;
+}
+
+.product__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 6rem;
+}
+
+.parent-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  gap: 9px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.left-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-images img {
+  display: block;
+  width: 230px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.right-image img {
+  display: block;
+  width: 230px;
+  height: 370px;
+}
+
+.product__right {
+  background-color: #ff6363;
+  height: 160px;
+  margin-top: 80px;
+  width: 350px;
+  padding: 3rem;
+  color: black;
+}
+
+.product__right p:nth-child(1) {
+  margin-top: -10px;
+}
+
+.product__right p:nth-child(2) {
+  font-size: 40px;
+  margin-top: -10px;
+  font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin: 5px 0;
+  }
+}
